@@ -8,9 +8,9 @@ Console.WriteLine("Введите число ");
 int num = int.Parse(Console.ReadLine());
 if (num>99)
 {
-    while ((num / 100) > 1)
+    while (num > 999)
     {
-        num = num / 10;
+        num = num / 10;       
     }
 Console.WriteLine($"{num % 10}");
 }else 
