@@ -5,4 +5,17 @@
 
 Console.Clear();
 Console.WriteLine("Введите число ");
-int = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine());
+if (num>99)
+{
+    while ((num / 100) > 1)
+    {
+        num = num / 10;
+    }
+Console.WriteLine($"{num % 10}");
+}else 
+{
+    Console.WriteLine($"Третьей цифры нет");
+}
+
+
