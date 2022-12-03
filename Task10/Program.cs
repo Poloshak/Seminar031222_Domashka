@@ -4,7 +4,7 @@
 // 918 -> 1
 
 Console.Clear();
-int num = new Random().Next(100, 1000);
-Console.WriteLine($"Число {num}");
+Console.WriteLine("Введите трехзначное число ");
+int num = int.Parse(Console.ReadLine());
 int num1 = num / 10;
 Console.WriteLine($"{num1 % 10}");
